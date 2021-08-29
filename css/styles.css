@@ -13,7 +13,9 @@
 
  /* my styles */
  .logo-header{
-margin-left: 44%;
+margin-left:40%;
+align-content: center;
+text-align: center;
  }
 .fa-facebook{
   text-align: center;
@@ -33,6 +35,15 @@ margin-left: 44%;
 /* box-sizing: content-box; */
 height: 50px;
 color: tomato;
+}
+.covid-meter{
+  background-image: url(../image/covid-19\ image.jpg);
+}
+.centered {
+  position: absolute;
+  top: 55%;
+  left: 81%;
+  transform: translate(-50%, -50%);
 }
 
 /* .myBtn {
