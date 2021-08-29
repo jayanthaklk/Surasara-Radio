@@ -28,6 +28,13 @@ margin-left: 44%;
   color: yellow;
   text-indent: 20px;
 }
+.btn-primary{
+/* max-width: 30px; */
+/* box-sizing: content-box; */
+height: 50px;
+color: tomato;
+}
+
 /* .myBtn {
   display: none;
   position: fixed;
