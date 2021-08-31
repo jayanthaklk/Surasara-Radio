@@ -30,6 +30,12 @@ text-align: center;
   color: yellow;
   text-indent: 20px;
 }
+.fa-whatsapp{
+  text-align: center;
+   font-size: 40px;
+  color: yellow;
+  text-indent: 20px; 
+}
 .btn-primary{
 /* max-width: 30px; */
 /* box-sizing: content-box; */
