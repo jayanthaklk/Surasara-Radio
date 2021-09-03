@@ -40,10 +40,10 @@ text-align: center;
 /* max-width: 30px; */
 /* box-sizing: content-box; */
 height: 50px;
-color: tomato;
+color: rgb(255, 176, 162);
 }
 .covid-meter{
-  background-image: url(../image/covid-19\ image.jpg);
+  /* background-image: url(../image/covid-19\ image.jpg); */
 }
 .centered {
   position: absolute;
