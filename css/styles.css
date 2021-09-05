@@ -51,6 +51,9 @@ color: rgb(255, 176, 162);
   left: 81%;
   transform: translate(-50%, -50%);
 }
+.b { 
+  word-spacing: 15px;
+}
 
 /* .myBtn {
   display: none;
