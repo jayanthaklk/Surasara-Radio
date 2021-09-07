@@ -59,7 +59,8 @@ color: rgb(255, 176, 162);
   text-shadow: 3px 3px 6px black;
 }
 .box-shadow{
-  box-shadow: 5px 5px 5px rgb(58, 55, 55);}
+  box-shadow: 5px 5px 5px rgb(58, 55, 55);
+}
   
 .myBtn {
   display: none;
@@ -75,11 +76,26 @@ color: rgb(255, 176, 162);
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
-}
+ }
 
 .myBtn:hover {
   background-color: #555;
 }
+.myBtn-mobile{
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 2px;
+ }
 
 :root {
   --bs-blue: #0d6efd;
