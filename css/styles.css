@@ -52,7 +52,7 @@ color: rgb(255, 176, 162);
   transform: translate(-50%, -50%);
 }
 .b { 
-  word-spacing: 15px;
+  word-spacing: 6px;
 }
 .text-shadaw{
   color: white;
@@ -65,8 +65,8 @@ color: rgb(255, 176, 162);
 .myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 16px;
+  right: 16px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -74,28 +74,28 @@ color: rgb(255, 176, 162);
   background-color: red;
   color: white;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
- }
+  padding: 8px;
+  border-radius: 2px;
+}
 
 .myBtn:hover {
   background-color: #555;
 }
-.myBtn-mobile{
+/* .myBtn-mobile{
   display: none;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 15px;
+  right: 15px;
   z-index: 99;
-  font-size: 16px;
+  font-size: 17px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: blue;
   color: white;
   cursor: pointer;
   padding: 6px;
   border-radius: 2px;
- }
+ } */
 
 :root {
   --bs-blue: #0d6efd;
