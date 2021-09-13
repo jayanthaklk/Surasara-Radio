@@ -81,6 +81,14 @@ color: rgb(255, 176, 162);
 .myBtn:hover {
   background-color: #555;
 }
+.clock{
+    font-size: 20px;
+  color: tomato;
+ background-color: black;
+width: 200px;
+}
+
+
 /* .myBtn-mobile{
   display: none;
   position: fixed;

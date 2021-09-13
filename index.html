@@ -108,8 +108,35 @@
             <div class="container ">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-3 col-md-3 col-sm-12 ">
+<!-- clock -->
+                        <body onload="startTime()">
+
+                            <h2></h2>
+                            
+                            <div id="txt" class="fw-bold text-center clock w-100 "></div>
+                            
+                            <script>
+                            function startTime() {
+                              const today = new Date();
+                              let h = today.getHours();
+                              let m = today.getMinutes();
+                              let s = today.getSeconds();
+                              m = checkTime(m);
+                              s = checkTime(s);
+                              document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                              setTimeout(startTime, 1000);
+                            }
+                            
+                            function checkTime(i) {
+                              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                              return i;
+                            }
+                            </script>
+
+
+
                         
-                            <a href="https://www.espncricinfo.com/live-cricket-score"><img src="./image/cricket score.jpg" class="d-none d-md-block mb-4 box-shadow" alt=""> </a>
+                            <a href="https://www.espncricinfo.com/live-cricket-score"><img src="./image/cricket score.jpg" class="d-none d-md-block mb-4 mt-2 box-shadow" alt=""> </a>
                 
                              <img src="./image/Ad/Surasara Radio 200x200.jpg" class="d-none d-md-block box-shadow" alt="">
                     </div>
@@ -119,7 +146,7 @@
                         <!-- <div class="col-lg-8 col-xl-7 col-xxl-6"> -->
                         <div class=" text-center text-xl-start">
                             <h1 class="display-5 fw-bolder text-white text-center b mb-2 mt-4 shadow p-3 mb-2 round d-none d-md-block">SURASARA RADIO</h1>
-                            <p class="lead fw-normal text-white-50 text-center mt-2">Your Family Radio Channel.
+                            <p class="lead fw-normal text-white-50 text-center mt-3">Your Family Radio Channel.
                                 <br>
                                 Entertainment, Health Tips, Education, Technology, Drama and many more........
                             </p>
@@ -317,44 +344,48 @@
             <div class="row mt-2">
                 <div class="col-md-6">
                     <!-- <img src="./image/Debate- Social media card.jpg" class="d-block w-100" style="width: 600px; text-align: center ;" alt=""> -->
-                    <img src="./image/Debate- Social media card.jpg" class="d-block w-100" alt="">
+                    <img src="./image/Uthathama puja 300x600.jpg" class="d-block w-100" alt="">
                 </div>
                 <div class="col-md-6">
                     <div class="row mt-2">
-                        <img src="./image/debate- vote 450x375.jpg" class="d-block w-100" alt="">
+                        <img src="./image/Kalina sanwada-Dammika 300x600.jpg" class="d-block w-100" alt="">
                     </div>
-                    <div class=" row mt-2">
+                    <!-- <div class=" row mt-2"> -->
                                 <!-- card grp-social icon -->
-                        <div class="card-group">
-                            <div class="card align-items-center">
+                        <!-- <div class="card-group">
+                            <div class="card align-items-center"> -->
                                 <!-- <img src="..." class="card-img-top" alt="..."> -->
         
-                                <a href="https://www.youtube.com/channel/UCahJ3Dc3ejwrmvPaZyuWIdA">
+                                <!-- <a href="https://www.youtube.com/channel/UCahJ3Dc3ejwrmvPaZyuWIdA">
                                     <img src="./image/youtube logo 110-77.png" class="card-img-top" style="width: 60%;"
-                                        alt=""></a>
+                                        alt=""></a> -->
         
         
-                            </div>
-                            <div class="card align-items-center">
+                            <!-- </div> -->
+                            <!-- <div class="card align-items-center"> -->
                                 <!-- <img src="..." class="card-img-top" alt="..."> -->
-                                <a href="https://www.facebook.com/groups/796459527727779/permalink/821645771875821/">
+                                <!-- <a href="https://www.facebook.com/groups/796459527727779/permalink/821645771875821/">
                                     <img src="./image/Facebook-logo 110-110.jpg" class="card-img-top" style="width:40%;"
                                         alt=""></a>
         
                             </div>
                             <div class="card align-items-center">
-                                <!-- <img src="..." class="card-img-top" alt="..."> -->
-                                <a href="https://www.instagram.com/nat.teensorg/">
+                                 <img src="..." class="card-img-top" alt="..."> -->
+                                <!-- <a href="https://www.instagram.com/nat.teensorg/">
                                     <img src="./image/instagram logo.png" class="card-img-top " style="width:40%;" alt=""></a>
-        
-                            </div>
+         -->                             </div>
                         </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <img src="./image/Debate- Social media card.jpg" class="d-block w-100" alt="">
                     </div>
+                    <div class="col-md-6">
+                        <img src="" class="d-block w-100" alt="">
+            </div>
                 </div>
             </div>
-        </div>
-        </div>
-        
+
+                  
 <!-- <div class>
                         <img src="./image/debate- vote 450.jpg" class="d-block w-100" alt=""> -->
                                              <!-- <div class="row text-center">
@@ -391,45 +422,53 @@
 
     <!-- Programs -->
           <section class="py-5">
-            <div class="container mt-0 px-5 my-5">
+            <div class="container-fluid mt-2 my-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6">
                         <div class="text-center">
-                            <h2 class="fw-bolder shadow-lg mb-3 p-2">Our Programs</h2>
+                            <h2 class="fw-bolder shadow-lg mb-3 p-1">Our Programs</h2>
                             <!-- <p class="lead fw-normal text-muted mb-5">Lorem ipsum, dolor sit amet consectetur
                                 adipisicing elit. Eaque fugit ratione dicta mollitia. Officiis ad.</p> -->
                         </div>
                     </div>
                 </div>
+
                 <div class="row ">
-                    <div class="col-lg-1 d-none d-md-block mx-auto ">
-                       <img src="./image/Ad/Fedex 120x600.jpg" alt="">
-                    </div>
-                    <div class="col-lg-3 mb-5">
+                    <div class="col-lg-2 px-5 p-sm-5">
+                        <!-- <div class="d-sm-flex"> -->
+                        <!-- <div class="card h-100 shadow border-0"> -->
+                            <img class="" src="./image/Ad/Fedex 120x600.jpg" alt="..." />
+                     </div>
+              <!-- Dammika perera       -->
+                    <div class="col-lg-3 mx-auto mb-5">
                         <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="./image/debate card new.jpg" alt="..." />
+                            <!-- <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." /> -->
+                            <img class="card-img-top" src="./image/Kalina sanwada-Dammika 300x600.jpg" alt="..." />
+                            
                             <div class="card-body p-4">
-                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Competition</div>
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Discussion</div>
                                 <a class="text-decoration-none link-dark stretched-link" href="#!">
-                                    <h5 class="card-title mb-3">COEUS-Speech Competition</h5>
+                                    <h5 class="card-title mb-3">Kaalina Sanwada</h5>
                                 </a>
-                                <p class="card-text mb-0">Speech Competition - Grand Final conducted by National Teenagers' Organization (NTO). 
-                                    20 contestants who were selected in first round will be participated.</p>
+                                <p class="card-text mb-0">Future of Sri Lanka under the Pandemic by Mr Dammika Perera 
+                                                                    
+                                </p>
                             </div>
                             <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                 <div class="d-flex align-items-end justify-content-between">
                                     <div class="d-flex align-items-center">
                                         <img class="rounded-circle me-3"
-                                            src="./image/NTO logo.jpg" alt="..." />
+                                            src="./image/Radio logo.jpg" style="text-align: center; width: 40px;" alt="..." />
                                         <div class="small">
-                                            <div class="fw-bold">By National Teenagers' Organization (NTO)</div>
-                                            <div class="text-muted">04 th Sep 2021 &middot; Live at 10:00AM</div>
+                                            <div class="fw-bold"> by Dammika Perera</div> 
+                                            <div class="text-muted">Daily &middot; 55 min duration</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+          <!-- FBM           -->
                     <div class="col-lg-3 mb-5">
                         <div class="card h-100 shadow border-0">
                             <img class="card-img-top" src="./image/FBM image.jpg" alt="..." />
@@ -451,6 +490,70 @@
                                        <div class="small">
                                             <div class="fw-bold">by Food Body Mind</div>
                                             <div class="text-muted">Daily &middot; 10 min duration per Episode</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+           <!-- Uththama Pooja          -->
+                    <div class="col-lg-3 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <!-- <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." /> -->
+                            <img class="card-img-top" src="./image/Uthathama puja 300x600.jpg" alt="..." />
+                            
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Discussion</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                    <h5 class="card-title mb-3">Uththama Pooja</h5>
+                                </a>
+                                <p class="card-text mb-0">Sithwala Savi is important than Sakwala Avi. Special thanks to Mr Nihal Wijerathne.                                                                   
+                                </p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3"
+                                            src="./image/Radio logo.jpg" style="text-align: center; width: 40px;" alt="..." />
+                                        <div class="small">
+                                            <div class="fw-bold"> by Chamika Munasingha</div> 
+                                            <div class="text-muted">Daily &middot; 58 min duration</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 text-center">
+                        <!-- <img src="./image/Ad/Fedex 120x600.jpg" alt=""> -->
+                    </div>
+                </div>
+                </div>
+             
+<!-- program- row-2 -->
+                <div class="row ">
+                    <div class="col-lg-2 d-none d-md-block text-center ">
+                       <img src="./image/Ad/Fedex 120x600.jpg" alt="">
+                    </div>
+                    <div class="col-lg-3 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="./image/debate card new.jpg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Competition</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                    <h5 class="card-title mb-3">COEUS-Speech Competition</h5>
+                                </a>
+                                <p class="card-text mb-0">Speech Competition - Grand Final conducted by National Teenagers' Organization (NTO). 
+                                    20 contestants who were selected in first round will be participated.</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3"
+                                            src="./image/NTO logo.jpg" alt="..." />
+                                        <div class="small">
+                                            <div class="fw-bold">By National Teenagers' Organization (NTO)</div>
+                                            <div class="text-muted">04 th Sep 2021 &middot; Live at 10:00AM</div>
                                         </div>
                                     </div>
                                 </div>
@@ -485,10 +588,39 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-1 text-center">
-                        <img src="./image/Ad/Fedex 120x600.jpg" alt="">
+                    <div class="col-lg-3 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <!-- <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." /> -->
+                            <img class="card-img-top" src="./image/Radio logo.jpg" alt="..." />
+                            
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Entertaining</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                    <h5 class="card-title mb-3">Songs</h5>
+                                </a>
+                                <p class="card-text mb-0">Various type of songs.....
+                                                                    
+                                </p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3"
+                                            src="./image/Radio logo.jpg" style="text-align: center; width: 40px;" alt="..." />
+                                        <div class="small">
+                                            <div class="fw-bold"> by SURASARA RADIO</div> 
+                                            <div class="text-muted">Daily &middot; </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 text-center"> -->
+                        <!-- <img src="./image/Ad/Fedex 120x600.jpg" alt=""> -->
                     </div>
                 </div>
+
                 <!-- Call to action-->
                 <!-- <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
                     <div
@@ -514,6 +646,16 @@
       
 <!-- video -->
 <div class="container">
+    <div class="row gx-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+            <div class="text-center">
+                <h2 class="fw-bolder shadow-lg mb-3 p-1">Important Videos</h2>
+                <!-- <p class="lead fw-normal text-muted mb-5">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Eaque fugit ratione dicta mollitia. Officiis ad.</p> -->
+            </div>
+        </div>
+    </div>
+
 <div class="row">
     <div class="col-auto shadow-lg">
 <!-- <iframe width="420" height="345" src="https://www.youtube.com/watch?v=l8WojJCYryg&t=10s"> -->
