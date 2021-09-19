@@ -47,7 +47,8 @@
                         <li class="nav-item"><a class="nav-link lead " href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link lead " href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link lead " href="schedule.html">Schedule</a></li>
-                        <li class="nav-item"><a class="nav-link lead " href="Poth-Piyasa.html">Poth Piyasa</a></li>
+                        <li class="nav-item"><a class="nav-link lead " href="./Healthfirst-home.html">Health-First</a></li>
+                        <li class="nav-item"><a class="nav-link lead " href="Poth-Piyasa.html">Poth-Piyasa</a></li>
                         <li class="nav-item"><a class="nav-link lead " href="contact.html" >Contact</a></li>
 
                       
@@ -113,7 +114,39 @@
 
                             <h2></h2>
                             
-                            <div id="txt" class="fw-bold text-center clock w-100 "></div>
+                            <div id="txt" class="fw-bold text-center clock w-100 mb-2"></div>
+                            
+                            <script>
+                            function startTime() {
+                              const today = new Date();
+                              let h = today.getHours();
+                              let m = today.getMinutes();
+                              let s = today.getSeconds();
+                              m = checkTime(m);
+                              s = checkTime(s);
+                              document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                              setTimeout(startTime, 1000);
+                            }
+                            
+                            function checkTime(i) {
+                              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                              return i;
+                            }
+                            </script>
+
+                              <!-- <a href="https://www.espncricinfo.com/live-cricket-score"><img src="./image/cricket score.jpg" class="d-none d-md-block mb-4 mt-2 box-shadow" alt=""> </a> -->
+                
+                             <img src="./image/Ad/Surasara Radio 200x200.jpg" class="d-none d-md-block box-shadow" alt="">
+                    </div>
+                   
+                    <!-- Radio player+logo -->
+                    <div class="col-xl-6 col-md-6 col-sm-12 align-items-center text-center">
+      <!-- clock -->
+                        <body onload="startTime()">
+
+                            <h2></h2>
+                            
+                            <div id="txt" class="fw-bold text-center clock w-100 mb-2"></div>
                             
                             <script>
                             function startTime() {
@@ -134,15 +167,6 @@
                             </script>
 
 
-
-                        
-                            <a href="https://www.espncricinfo.com/live-cricket-score"><img src="./image/cricket score.jpg" class="d-none d-md-block mb-4 mt-2 box-shadow" alt=""> </a>
-                
-                             <img src="./image/Ad/Surasara Radio 200x200.jpg" class="d-none d-md-block box-shadow" alt="">
-                    </div>
-                   
-                    <!-- Radio player+logo -->
-                    <div class="col-xl-6 col-md-6 col-sm-12 align-items-center text-center">
                         <!-- <div class="col-lg-8 col-xl-7 col-xxl-6"> -->
                         <div class=" text-center text-xl-start">
                             <h1 class="display-5 fw-bolder text-white text-center b mb-2 mt-4 shadow p-3 mb-2 round d-none d-md-block">SURASARA RADIO</h1>
@@ -384,7 +408,7 @@
             </div>
                 </div>
             </div>
-
+            
                   
 <!-- <div class>
                         <img src="./image/debate- vote 450.jpg" class="d-block w-100" alt=""> -->
@@ -407,18 +431,18 @@
 </div> -->
 
 <!-- Debate promo audio -->
-<!-- <div class="container">
+<div class="container">
 <div class="row"> 
     <div class="col-md-6 mt-2">  
-<audio controls> -->
-        <!-- <source src="" type="audio/ogg"> -->
-        <!-- <source src="./image/Debate promo voice- 04th September.mp3" type="audio/mpeg">
-      Speech Competition Advertisement 
+<audio controls>
+        <source src="" type="audio/ogg">
+        <source src="./image/Debate final results and speeches.mp3" type="audio/mpeg">
+      Listen to Speech Competition Winners' Speeches 
       </audio>
-      <h4>Speech Competition Advertisement (Audio}</h4>
+      <h4> Listen to Speech Competition Winners' Speeches </h4>
       </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Programs -->
           <section class="py-5">

@@ -87,6 +87,11 @@ color: rgb(255, 176, 162);
  background-color: black;
 width: 200px;
 }
+.jumbotron-article{
+  background-color:gray;
+  color: white;
+  /* padding: 1%; */
+}
 
 
 /* .myBtn-mobile{
